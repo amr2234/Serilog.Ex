@@ -1,0 +1,27 @@
+﻿@model List<Serilogs>
+
+
+
+
+<a asp-action="Create" asp-controller="Department">Add Department</a>
+
+<table border="1">
+
+	<thead>
+		<tr><th>Log Massage </th></tr>
+	</thead>
+
+	<tbody>
+
+
+
+		<h1>ViewBag.x</h1>
+		@foreach (var item in Model)
+		{
+			<tr> <td>@item.MessageTemplate</td></tr>
+		}
+
+
+	</tbody>
+
+</table>
